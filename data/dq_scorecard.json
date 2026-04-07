@@ -1,0 +1,202 @@
+{
+  "dq_score_pct": 100.0,
+  "dq_status": "PASS",
+  "passed": 24,
+  "warnings": 0,
+  "failed": 0,
+  "total_checks": 24,
+  "checks": [
+    {
+      "category": "Completeness",
+      "column": "Role_ID",
+      "check": "Null % \u2264 5.0%",
+      "value": 0.0,
+      "threshold": 5.0,
+      "status": "PASS"
+    },
+    {
+      "category": "Completeness",
+      "column": "Industry",
+      "check": "Null % \u2264 5.0%",
+      "value": 0.09,
+      "threshold": 5.0,
+      "status": "PASS"
+    },
+    {
+      "category": "Completeness",
+      "column": "Human_Labor_Cost_hr",
+      "check": "Null % \u2264 5.0%",
+      "value": 0.0,
+      "threshold": 5.0,
+      "status": "PASS"
+    },
+    {
+      "category": "Completeness",
+      "column": "Tokens_per_Human_Hour",
+      "check": "Null % \u2264 5.0%",
+      "value": 0.0,
+      "threshold": 5.0,
+      "status": "PASS"
+    },
+    {
+      "category": "Completeness",
+      "column": "Inference_Cost_2026",
+      "check": "Null % \u2264 5.0%",
+      "value": 0.0,
+      "threshold": 5.0,
+      "status": "PASS"
+    },
+    {
+      "category": "Completeness",
+      "column": "Agent_Labor_Equivalent_Cost",
+      "check": "Null % \u2264 5.0%",
+      "value": 0.0,
+      "threshold": 5.0,
+      "status": "PASS"
+    },
+    {
+      "category": "Completeness",
+      "column": "Substitution_Elasticity",
+      "check": "Null % \u2264 5.0%",
+      "value": 0.0,
+      "threshold": 5.0,
+      "status": "PASS"
+    },
+    {
+      "category": "Completeness",
+      "column": "AI_Augmentation_Factor",
+      "check": "Null % \u2264 5.0%",
+      "value": 0.0,
+      "threshold": 5.0,
+      "status": "PASS"
+    },
+    {
+      "category": "Completeness",
+      "column": "Automation_Risk_Index",
+      "check": "Null % \u2264 5.0%",
+      "value": 0.0,
+      "threshold": 5.0,
+      "status": "PASS"
+    },
+    {
+      "category": "Completeness",
+      "column": "Hardware_CapEx_Sensitivity",
+      "check": "Null % \u2264 5.0%",
+      "value": 0.0,
+      "threshold": 5.0,
+      "status": "PASS"
+    },
+    {
+      "category": "Completeness",
+      "column": "Regulatory_Moat",
+      "check": "Null % \u2264 5.0%",
+      "value": 0.0,
+      "threshold": 5.0,
+      "status": "PASS"
+    },
+    {
+      "category": "Completeness",
+      "column": "Substitution_Year_Est",
+      "check": "Null % \u2264 5.0%",
+      "value": 0.0,
+      "threshold": 5.0,
+      "status": "PASS"
+    },
+    {
+      "category": "Completeness",
+      "column": "Industry_is_null",
+      "check": "Null % \u2264 5.0%",
+      "value": 0.0,
+      "threshold": 5.0,
+      "status": "PASS"
+    },
+    {
+      "category": "Completeness",
+      "column": "cost_ratio",
+      "check": "Null % \u2264 5.0%",
+      "value": 0.0,
+      "threshold": 5.0,
+      "status": "PASS"
+    },
+    {
+      "category": "Completeness",
+      "column": "Inference_Cost_2026_had_negative",
+      "check": "Null % \u2264 5.0%",
+      "value": 0.0,
+      "threshold": 5.0,
+      "status": "PASS"
+    },
+    {
+      "category": "Completeness",
+      "column": "Agent_Labor_Equivalent_Cost_had_negative",
+      "check": "Null % \u2264 5.0%",
+      "value": 0.0,
+      "threshold": 5.0,
+      "status": "PASS"
+    },
+    {
+      "category": "Completeness",
+      "column": "cost_ratio_had_negative",
+      "check": "Null % \u2264 5.0%",
+      "value": 0.0,
+      "threshold": 5.0,
+      "status": "PASS"
+    },
+    {
+      "category": "Uniqueness",
+      "column": "_all_",
+      "check": "Duplicate % \u2264 3.0%",
+      "value": 0.0,
+      "threshold": 3.0,
+      "status": "PASS"
+    },
+    {
+      "category": "Range",
+      "column": "Automation_Risk_Index",
+      "check": "Automation_Risk_Index \u2265 0.0",
+      "value": 0,
+      "threshold": 0,
+      "status": "PASS"
+    },
+    {
+      "category": "Range",
+      "column": "Automation_Risk_Index",
+      "check": "Automation_Risk_Index \u2264 100.0",
+      "value": 0,
+      "threshold": 0,
+      "status": "PASS"
+    },
+    {
+      "category": "Range",
+      "column": "Substitution_Elasticity",
+      "check": "Substitution_Elasticity \u2265 0.0",
+      "value": 0,
+      "threshold": 0,
+      "status": "PASS"
+    },
+    {
+      "category": "Range",
+      "column": "Substitution_Elasticity",
+      "check": "Substitution_Elasticity \u2264 5.0",
+      "value": 0,
+      "threshold": 0,
+      "status": "PASS"
+    },
+    {
+      "category": "Range",
+      "column": "AI_Augmentation_Factor",
+      "check": "AI_Augmentation_Factor \u2265 0.0",
+      "value": 0,
+      "threshold": 0,
+      "status": "PASS"
+    },
+    {
+      "category": "Range",
+      "column": "AI_Augmentation_Factor",
+      "check": "AI_Augmentation_Factor \u2264 5.0",
+      "value": 0,
+      "threshold": 0,
+      "status": "PASS"
+    }
+  ]
+}

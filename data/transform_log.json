@@ -1,0 +1,74 @@
+[
+  {
+    "step": "null_drop_Role_ID",
+    "layer": "silver",
+    "action": "Drop rows with null Role_ID",
+    "rows_in": 1230,
+    "rows_out": 1194,
+    "notes": "Dropped 36 rows where Role_ID was null"
+  },
+  {
+    "step": "null_flag_Industry",
+    "layer": "silver",
+    "action": "Add null flag for Industry",
+    "rows_in": 1230,
+    "rows_out": 1194,
+    "notes": "Added Industry_is_null indicator column"
+  },
+  {
+    "step": "null_fill_mean_Human_Labor_Cost_hr",
+    "layer": "silver",
+    "action": "Fill nulls with mean in Human_Labor_Cost_hr",
+    "rows_in": 1230,
+    "rows_out": 1194,
+    "notes": "Null values in Human_Labor_Cost_hr filled with column mean"
+  },
+  {
+    "step": "null_fill_mean_Tokens_per_Human_Hour",
+    "layer": "silver",
+    "action": "Fill nulls with mean in Tokens_per_Human_Hour",
+    "rows_in": 1230,
+    "rows_out": 1194,
+    "notes": "Null values in Tokens_per_Human_Hour filled with column mean"
+  },
+  {
+    "step": "custom_cost_ratio",
+    "layer": "silver",
+    "action": "Custom: cost_ratio = Inference_Cost_2026/Human_Labor_Cost_hr",
+    "rows_in": 1194,
+    "rows_out": 1194,
+    "notes": "Custom business rule applied: cost_ratio=Inference_Cost_2026/Human_Labor_Cost_hr"
+  },
+  {
+    "step": "clamp_negative_Inference_Cost_2026",
+    "layer": "silver",
+    "action": "Clamp negative values in Inference_Cost_2026 to 0",
+    "rows_in": 1194,
+    "rows_out": 1194,
+    "notes": "10 negative value(s) in Inference_Cost_2026 set to 0. Original flagged in Inference_Cost_2026_had_negative."
+  },
+  {
+    "step": "clamp_negative_Agent_Labor_Equivalent_Cost",
+    "layer": "silver",
+    "action": "Clamp negative values in Agent_Labor_Equivalent_Cost to 0",
+    "rows_in": 1194,
+    "rows_out": 1194,
+    "notes": "10 negative value(s) in Agent_Labor_Equivalent_Cost set to 0. Original flagged in Agent_Labor_Equivalent_Cost_had_negative."
+  },
+  {
+    "step": "clamp_negative_cost_ratio",
+    "layer": "silver",
+    "action": "Clamp negative values in cost_ratio to 0",
+    "rows_in": 1194,
+    "rows_out": 1194,
+    "notes": "10 negative value(s) in cost_ratio set to 0. Original flagged in cost_ratio_had_negative."
+  },
+  {
+    "step": "dedup_silver",
+    "layer": "silver",
+    "action": "Remove duplicate rows",
+    "rows_in": 1230,
+    "rows_out": 1167,
+    "notes": "Removed 63 duplicate rows in Silver layer"
+  }
+]
